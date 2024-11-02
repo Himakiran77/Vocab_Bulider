@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocab Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(75, 85, 99, 0.95); 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            z-index: 50;
+        }
+        .mobile-menu a {
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            text-align: center;
+            width: 80%;
+            border-radius: 5px;
+        }
+        .mobile-menu a:hover {
+            background-color: #4F46E5;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-purple-600 fixed top-0 left-0 w-full z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a class="text-white text-xl font-bold" href="#">Vocab Builder</a>
+            <button class="text-white md:hidden focus:outline-none" id="navbarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="hidden md:flex space-x-4" id="navMenu">
+                <a class="text-white hover:bg-blue-700 px-3 py-2 rounded" href="home.html">Home</a>
+                <a class="text-white hover:bg-blue-700 px-3 py-2 rounded" href="features.html">Features</a>
+                <a class="text-white hover:bg-blue-700 px-3 py-2 rounded" href="lessons.html">Lessons</a>
+                <a class="text-white hover:bg-blue-700 px-3 py-2 rounded" href="quiz.html">Quiz</a>
+                <a class="text-white hover:bg-blue-700 px-3 py-2 rounded" href="progress.html">Progress</a>
+                <a class="text-white hover:bg-blue-700 px-3 py-2 rounded" href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="mobile-menu flex-col" id="mobileMenu">
+            <a href="home.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="progress.html">Progress</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+    <header class="bg-purple-600 text-white py-10 mt-4">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-2/3">
+                    <h1 class="text-3xl font-semibold text-center">Welcome to the Vocabulary Building</h1>
+                    <p class="mt-4 text-center">Enhance your vocabulary skills with interactive lessons, quizzes, and flashcards!</p>
+                </div>
+                <div class="md:w-1/3 text-center mt-4 md:mt-0">
+                    <img src="https://cdn-wordup.com/WebsiteImages/ProductPagePics/01_Top.webp" class="img-fluid mt-8" alt="Vocabulary Building App Image"/>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="bg-gray-200 text-gray-800 py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-x-20">
+                <div class="md:w-1/3 text-center">
+                    <img src="https://cdn-wordup.com/WebsiteImages/ProductPagePics/05_Photos%20_%20videos.webp" class="img-fluid" alt="Vocabulary Building App Image"/>
+                </div>
+                <div class="md:w-2/3 ml-px">
+                    <h1 class="text-2xl font-semibold">Boost your vocabulary, like never before</h1>
+                    <p class="mt-4">Discover WordUp, Your Ultimate AI-Powered Tool to Master English Vocabulary</p>
+                    <p class="mt-2">Whether you're a beginner, advanced learner, or even a native speaker, WordUp brings words to life, making every learning moment memorable. Dive into a fun, engaging way of expanding your English skills—because with WordUp, learning isn’t just easy, it’s enjoyable for everyone, everywhere!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="bg-pink-200 text-gray-800 py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-x-20">
+                <div class="md:w-1/3 text-center">
+                    <img src="https://cdn-wordup.com/WebsiteImages/ProductPagePics/04_AI%20chat.webp" class="img-fluid" alt="Vocabulary Building App Image"/>
+                </div>
+                <div class="md:w-2/3">
+                    <h1 class="text-2xl font-semibold">Knowledge Map: A Unique Invention by WordUp</h1>
+                    <p class="mt-4">Discover WordUp, Your Ultimate AI-Powered Tool to Master English Vocabulary</p>
+                    <p class="mt-2">With WordUp's Knowledge Map, get a clear view of where your English stands and chart a personalized path to mastery. This map guides you to focus on the words that matter most for your goals, making learning not only effective but also enjoyable. It’s the smartest, shortest, and most engaging route to vocabulary perfection.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="bg-green-100 text-gray-800 py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-x-20">
+                <div class="md:w-1/3 text-center">
+                    <img src="https://cdn-wordup.com/WebsiteImages/ProductPagePics/02_Exam.webp" class="img-fluid" alt="Vocabulary Building App Image"/>
+                </div>
+                <div class="md:w-2/3">
+                    <h1 class="text-2xl font-semibold">Ace your exam: IELTS, TOEFL, and more</h1>
+                    <p class="mt-4">Mastering vocabulary is crucial for top scores in exams, and achieving your global ambitions. By analyzing past exams, WordUp offers you a shortcut path to master the vocabulary you need for each exam.</p>
+                    <p class="mt-2">It's your smart study partner. Dive into a tailored learning experience with interactive quizzes, clear audio pronunciations, and illustrative sentences. With WordUp, not only do you learn but you conquer.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <a class="text-white text-xl font-bold" href="#">Vocab Builder</a>
+                <div class="md:w-1/4 mb-6 md:mb-0">
+                    <h2 class="text-lg font-semibold mb-2">Quick Links</h2>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="#features" class="hover:text-gray-400">Features</a></li>
+                        <li><a href="#lessons" class="hover:text-gray-400">Lessons</a></li>
+                        <li><a href="#quiz" class="hover:text-gray-400">Quiz</a></li>
+                        <li><a href="#progress" class="hover:text-gray-400">Progress</a></li>
+                        <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="md:w-1/4 mb-6 md:mb-0">
+                    <h2 class="text-lg font-semibold mb-2">Follow Us</h2>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-gray-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="md:w-1/4">
+                    <h2 class="text-lg font-semibold mb-2">Contact Us</h2>
+                    <p class="text-sm">Email: <a href="mailto:support@vocabbuilder.com" class="hover:text-gray-400">support@vocabbuilder.com</a></p>
+                    <p class="text-sm">Phone: <a href="tel:+1234567890" class="hover:text-gray-400">+1 (234) 567-890</a></p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-sm">&copy; 2024 Vocabulary Building App. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
