@@ -5,7 +5,6 @@
       { "source": "/", "destination": "/Home.html" },
       { "source": "/", "destination": "/features.html" },
       { "source": "/", "destination": "/lessons.html" },
-      { "source": "/", "destination": "/answers.html"},
       { "source": "/", "destination": "/quiz.html" },
       { "source": "/", "destination": "/progress.html" },
       { "source": "/", "destination": "/contact.html" },
